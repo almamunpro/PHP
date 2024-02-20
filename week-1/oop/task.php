@@ -6,7 +6,7 @@
 class Task{
     public $name; //visible
     private $status; //
-    protected $members=[];
+    protected static $members=[];
     public function setName($name){
         $this ->name = $name;
 
@@ -14,6 +14,9 @@ class Task{
 
     public function changeStatus($status){
         $this ->status = $status;
+    }
+    public function _destruct(){
+        //toto: implement _destruct() method
     }
 }
 // no usages
