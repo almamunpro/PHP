@@ -5,5 +5,8 @@
         },
         "files":["App/classes/"]
 
+    },
+    "require": {
+        "fakerphp/faker": "1.0.0"
     }
 }
