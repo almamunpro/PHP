@@ -1,0 +1,35 @@
+HTTP (Hypertext Transfer Protocol) supports several request methods, also known as HTTP verbs, which indicate the desired action to be performed on a resource. Here are some common HTTP request methods:
+
+1. **GET**: Requests a representation of the specified resource. GET requests should only retrieve data and should not have any other effect.
+
+2. **POST**: Submits data to be processed to the specified resource. POST requests may lead to the creation of new resources or the update of existing ones.
+
+3. **PUT**: Updates the specified resource with the request payload. PUT requests are idempotent, meaning that the result of a successful request is the same regardless of the number of times it is executed.
+
+4. **PATCH**: Partially updates the specified resource with the request payload. Unlike PUT, PATCH requests apply only the provided changes and do not require sending the entire resource representation.
+
+5. **DELETE**: Deletes the specified resource.
+
+6. **HEAD**: Requests headers from the specified resource without transferring the response body. This method is often used to check resource availability or retrieve metadata.
+
+7. **OPTIONS**: Returns the HTTP methods supported by the server for the specified resource. This method is commonly used for cross-origin resource sharing (CORS) preflight requests.
+
+8. **TRACE**: Echoes the received request back to the client, which is mainly used for diagnostic purposes.
+
+9. **CONNECT**: Converts the request connection to a transparent TCP/IP tunnel, usually used to establish SSL connections through an HTTP proxy.
+
+These HTTP methods provide a standardized way for clients to interact with web servers and manipulate resources. Each method has specific semantics and usage guidelines, and choosing the appropriate method depends on the desired operation and the characteristics of the resource being accessed or manipulated.
+
+HTTP response codes, also known as status codes, are three-digit numbers returned by a server in response to a client's request made to the server. They provide information about the status of the request and are grouped into five categories:
+
+1. **1xx (Informational)**: These are provisional responses indicating that the server has received the request and is continuing with the process. For example, `100 Continue` indicates that the initial part of the request has been received and the client can continue with the request.
+
+2. **2xx (Success)**: These codes indicate that the request was received, understood, and accepted successfully. For example, `200 OK` indicates that the request was successful, while `201 Created` indicates that a new resource was successfully created.
+
+3. **3xx (Redirection)**: These codes indicate that further action needs to be taken by the client to complete the request. For example, `301 Moved Permanently` indicates that the requested resource has been permanently moved to a new location, while `302 Found` indicates a temporary redirection.
+
+4. **4xx (Client Error)**: These codes indicate that the client made an error in the request. For example, `400 Bad Request` indicates that the request was malformed, while `404 Not Found` indicates that the requested resource was not found on the server.
+
+5. **5xx (Server Error)**: These codes indicate that the server encountered an error while processing the request. For example, `500 Internal Server Error` indicates that there was an unexpected condition preventing the server from fulfilling the request, while `503 Service Unavailable` indicates that the server is temporarily unable to handle the request due to maintenance or overload.
+
+These status codes are an essential part of the HTTP protocol and help in diagnosing and troubleshooting issues when communicating between clients and servers.
